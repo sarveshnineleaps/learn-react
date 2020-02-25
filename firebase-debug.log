@@ -1,0 +1,31 @@
+[debug] [2020-02-20T09:55:11.306Z] ----------------------------------------------------------------------
+[debug] [2020-02-20T09:55:11.308Z] Command:       /home/nineleaps/.nvm/versions/node/v12.14.0/bin/node /home/nineleaps/.nvm/versions/node/v12.14.0/bin/firebase deploy
+[debug] [2020-02-20T09:55:11.308Z] CLI Version:   7.13.1
+[debug] [2020-02-20T09:55:11.308Z] Platform:      linux
+[debug] [2020-02-20T09:55:11.308Z] Node Version:  v12.14.0
+[debug] [2020-02-20T09:55:11.308Z] Time:          Thu Feb 20 2020 15:25:11 GMT+0530 (India Standard Time)
+[debug] [2020-02-20T09:55:11.308Z] ----------------------------------------------------------------------
+[debug] [2020-02-20T09:55:11.308Z] 
+[debug] [2020-02-20T09:55:11.312Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-20T09:55:11.312Z] > authorizing via signed-in user
+[debug] [2020-02-20T09:55:11.312Z] [iam] checking project learnreactwithfirebase-b159a for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-20T09:55:11.313Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/learnreactwithfirebase-b159a:testIamPermissions  
+
+[debug] [2020-02-20T09:55:13.094Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-20T09:55:13.096Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/learnreactwithfirebase-b159a  
+ 
+[debug] [2020-02-20T09:55:13.499Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'learnreactwithfirebase-b159a'...
+[info] 
+[info] i  deploying firestore, functions, hosting
+[debug] [2020-02-20T09:55:13.768Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:112:11)
+    at Object.join (path.js:1040:7)
+    at Config.path (/home/nineleaps/.nvm/versions/node/v12.14.0/lib/node_modules/firebase-tools/lib/config.js:149:39)
+    at getChildEnvironment (/home/nineleaps/.nvm/versions/node/v12.14.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:50:49)
+    at runTargetCommands (/home/nineleaps/.nvm/versions/node/v12.14.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:71:14)
+    at /home/nineleaps/.nvm/versions/node/v12.14.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
